@@ -1,21 +1,41 @@
-# ToyRobot
+# Toy Robot Simulator
 
 **TODO: Add description**
 
-## Installation
+Toy Robot Simulator [Problem](PROBLEM.md) Solution in Elixir
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `toy_robot` to your list of dependencies in `mix.exs`:
+## Prerequisite
+  - Elixir
 
-```elixir
-def deps do
-  [
-    {:toy_robot, "~> 0.1.0"}
-  ]
-end
+## Run
+
+```bash
+iex -S mix
+
+
+#Examples
+
+iex> place 0, 0, :north
+iex> move
+iex> report
+{0, 1, :north}
+
+iex> place 0, 0, :north
+iex> left
+iex> report
+{0, 0, :west}
+
+iex> place 1, 2, :east
+iex> move
+iex> move
+iex> left
+iex> move
+iex> report
+{3, 3, :north}
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at <https://hexdocs.pm/toy_robot>.
+## Run Test
+```bash
+mix test
+```
 
