@@ -1,7 +1,4 @@
 # Toy Robot Simulator
-
-**TODO: Add description**
-
 Toy Robot Simulator [Problem](PROBLEM.md) Solution in Elixir
 
 ## Prerequisite
