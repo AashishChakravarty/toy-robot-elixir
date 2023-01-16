@@ -8,6 +8,8 @@ defmodule ToyRobot.Application do
   @impl true
   def start(_type, _args) do
     children = [
+      ToyRobot
+
       # Starts a worker by calling: ToyRobot.Worker.start_link(arg)
       # {ToyRobot.Worker, arg}
     ]
