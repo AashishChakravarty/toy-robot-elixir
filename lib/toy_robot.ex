@@ -17,10 +17,6 @@ defmodule ToyRobot do
     GenServer.cast(ToyRobot, {:place, x, y, f})
   end
 
-  def report() do
-    GenServer.call(ToyRobot, :report)
-  end
-
   def move do
     GenServer.call(ToyRobot, :move)
   end
@@ -29,11 +25,15 @@ defmodule ToyRobot do
     GenServer.call(ToyRobot, :left)
   end
 
-  # Server / Callbacks
-
   def right do
     GenServer.call(ToyRobot, :right)
   end
+
+  def report do
+    GenServer.call(ToyRobot, :report)
+  end
+
+  # Server / Callbacks
 
   def init(:ok) do
     {:ok, {0, 0, :east}}
